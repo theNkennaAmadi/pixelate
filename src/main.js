@@ -207,5 +207,4 @@ export class Content {
 
 // .content elements
 const contentElems = [...document.querySelectorAll('[data-pixel-load]')]
-console.log(contentElems);
 contentElems.forEach(el => new Content(el));
