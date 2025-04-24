@@ -80,11 +80,12 @@ export class Content {
         // specific starting point:
         ScrollTrigger.create({
             trigger: this.DOM.el,
-            start: 'top+=20% bottom',
+            start: 'top 50%',
+            markers: true,
             onEnter: () => {
                 this.animatePixels();
             },
-            once: true
+            //once: true
         });
 
         // Add parallax effect to titles
@@ -196,7 +197,7 @@ export class Content {
                 this.render();
                 this.pxIndex++;
                 this.animatePixels();
-            }, this.pxIndex === 0 ? 300 : 80); // The first time should be the longest.
+            }, this.pxIndex === 0 ? 400 : 100); // The first time should be the longest.
         }
         else {
             this.pxIndex = this.pxFactorValues.length - 1;
