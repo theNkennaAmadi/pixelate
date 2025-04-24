@@ -81,7 +81,7 @@ export class Content {
         ScrollTrigger.create({
             trigger: this.DOM.el,
             start: 'top 50%',
-            markers: true,
+            markers: false,
             onEnter: () => {
                 this.animatePixels();
             },
