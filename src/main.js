@@ -26,7 +26,7 @@ export class Content {
     // visible for a longer time.
     // Towards the end we don't add many values as
     // we want the sharpening up to happen quickly here.
-    pxFactorValues = [1, 2, 4, 9, 100];
+    pxFactorValues = [4, 9, 20, 50, 100];
     pxIndex = 0;
 
     /**
